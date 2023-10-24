@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Default Light Mode Styles */
+body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Styles for Dark Mode */
+  .dark-mode {
+    background-color: #000000dc;
+    color: #ffffff;
+  }
+  
+  /* Styles for Light Mode */
+  .light-mode {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+
+.overlay-active {
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity and color as needed */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+
+.hover-img{
+    transition: .2s ease-in-out;
+}
+
+.hover-img:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.512) !important
+}
+
+.my-modal {
+    width: 70%;
+} 
+
+.bck{
+    background-image: url('https://picsum.photos/200/300');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
