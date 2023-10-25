@@ -58,7 +58,7 @@ const {darkMode} = useContext(ImageContext)
                             <button className='btn btn-primary me-2 w-25'>Total Likes : {data.likes}</button><div><span className='fw-bold'>Description by Publisher</span> :  {data.description || 'N/A'}</div>
                         </div>
                         <hr/>
-                        <div className='d-flex w-100 '>
+                        <div className='d-flex w-100 overflow-auto '>
                             <div className={`w-100 fs-6 rounded border m-1 p-2 ${darkMode?"bg-dark text-light":"bg-light text-dark shadow"}`}>
                                 <div className=' mb-1'>Location : {data.user.location || 'N/A'}</div>
                                 <div className=' mb-1'>Instagram UserName : {data.user.instagram_username || 'N/A'}</div>
